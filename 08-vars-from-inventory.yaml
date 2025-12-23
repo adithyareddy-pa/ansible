@@ -1,4 +1,4 @@
-- name: variables from files
+- name: variables to print
   hosts: web
   tasks:
   - name: print course details
