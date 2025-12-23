@@ -1,0 +1,6 @@
+- name: variables
+  hosts: web
+  tasks:
+  - name: print info
+    ansible.builtin.service:
+      msg: "I am learning devops"
