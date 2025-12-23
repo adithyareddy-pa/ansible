@@ -1,0 +1,2 @@
+- name: devops info
+  hosts: local
