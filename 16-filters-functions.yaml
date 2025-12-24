@@ -4,3 +4,9 @@
     - name: print variable
       ansible.builtin.debug:
         msg: "Hello {{ course | default('ansible') }}"
+
+    - name: convert to capital
+      vars:
+        greeting : "hello Adithya"
+      ansible.builtin.debug:
+        msg: "{{ greeting | upper }}"
