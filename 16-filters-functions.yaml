@@ -16,3 +16,15 @@
         numbers: [1, 2, 3, 4, 4, 3, 2, 1]
       ansible.builtin.debug:
         msg: "unique {{ numbers | unique }}"
+
+    - name: min and max
+      vars:
+        numbers: [1, 2, 3, 4, 4, 3, 2, 1]
+      ansible.builtin.debug:
+        msg: "unique {{ numbers | min }}"
+
+    - name: min and max
+      vars:
+        numbers: [1, 2, 3, 4, 4, 3, 2, 1]
+      ansible.builtin.debug:
+        msg: "unique {{ numbers | max }}"
